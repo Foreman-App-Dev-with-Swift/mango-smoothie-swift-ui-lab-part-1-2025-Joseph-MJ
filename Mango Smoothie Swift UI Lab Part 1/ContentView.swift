@@ -93,15 +93,40 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
-//Work below in this VStack! ************
+            
+            
+            //Work below in this VStack! ************
+            Text("Hello World!")
+            Text("Mango Smoothie")
+        VStack {
                 Text("Hello")
-                   
-            
-            
-        
+                Text("World")
+            }
+            HStack {
+                Text("Hello")
+                Text("World")
+            }
+            HStack {
+                Text("Hello")
+                    .foregroundColor(.blue)
+                    .font(.title)
+                Text("World")
+                    .foregroundColor(.red)
+                    .font(.body)
+            }
 //Work above in this VStack! ************
-        }
         
+        
+            VStack{
+                Text("Mango Smoothie!")
+                    .font(.caption)
+                    .bold()
+                Text("     Mango, Banana, Water")
+                    .font(.caption2)
+                Text("320 Calories")
+            }
+            
+        }
         
     }
     
