@@ -92,38 +92,20 @@ struct ContentView: View {
     
     var body: some View {
         
-        VStack {
-            
-            
-            //Work below in this VStack! ************
-            Text("Hello World!")
-            Text("Mango Smoothie")
-        VStack {
-                Text("Hello")
-                Text("World")
-            }
-            HStack {
-                Text("Hello")
-                Text("World")
-            }
-            HStack {
-                Text("Hello")
-                    .foregroundColor(.blue)
-                    .font(.title)
-                Text("World")
-                    .foregroundColor(.red)
-                    .font(.body)
-            }
+    
 //Work above in this VStack! ************
         
         
-            VStack{
+        VStack(alignment: .leading){
                 Text("Mango Smoothie!")
-                    .font(.caption)
-                    .bold()
-                Text("     Mango, Banana, Water")
-                    .font(.caption2)
-                Text("320 Calories")
+                .font(.title2)
+                .fontWeight(.regular)
+                
+                Text("Mango, Banana, Water")
+                .font(.body)
+            Text("320 calories")
+                .font(.caption)
+                    
             }
             
         }
@@ -131,7 +113,7 @@ struct ContentView: View {
     }
     
     
-}
+
  
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
