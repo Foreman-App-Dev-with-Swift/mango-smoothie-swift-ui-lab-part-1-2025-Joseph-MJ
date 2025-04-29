@@ -92,21 +92,31 @@ struct ContentView: View {
     
     var body: some View {
         
-        VStack {
-//Work below in this VStack! ************
-                Text("Hello")
-                   
-            
-            
-        
+    
 //Work above in this VStack! ************
-        }
         
+        
+        VStack(alignment: .leading){
+                Text("Mango Smoothie!")
+                .font(.headline)
+                .fontWeight(.bold)
+                
+                Text("Mango, Banana, Water")
+                .font(.body)
+                .fontWeight(.medium)
+            
+                Text("320 calories")
+                .font(.footnote)
+                
+                    
+            }
+            
+        }
         
     }
     
     
-}
+
  
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
